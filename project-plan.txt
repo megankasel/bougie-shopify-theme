@@ -1,0 +1,5 @@
+TODO on the Shopify Site
+
+
+- Increase the header width on desktop 
+- Clean Up category Tab under essentials on the home page (make Even erything look nicer)

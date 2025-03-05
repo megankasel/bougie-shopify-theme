@@ -1,0 +1,64 @@
+<!-- sections/new-styles.liquid -->
+<section class="new-styles-section">
+  <div class="new-styles-header">
+    <h2>New Styles</h2>
+  </div>
+  <div class="new-styles-grid">
+    {% assign product_count = 0 %}
+    {% for product in collections[section.settings.collection].products %}
+      {% if product_count < 8 %}
+        <a href="{{ product.url }}" class="new-style-item">
+          <div class="new-style-image">
+            {% if product.featured_image %}
+              <img
+                src="{{ product.featured_image | image_url: width: 540, height: 540 }}"
+                alt="{{ product.title }}"
+                width="540"
+                height="540"
+              >
+            {% endif %}
+          </div>
+          <div class="new-style-title">
+            {{ product.title }}
+          </div>
+        </a>
+        {% assign product_count = product_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "New Styles",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+  "type": "color",
+  "id": "background_color",
+  "label": "Background color",
+  "default": "#ffffff"
+},
+{
+  "type": "select",
+  "id": "animation_style",
+  "label": "Animation style",
+  "options": [
+    { "value": "fade", "label": "Fade in" },
+    { "value": "slide", "label": "Slide in" },
+    { "value": "none", "label": "None" }
+  ],
+  "default": "none"
+}
+  ],
+  "presets": [
+    {
+      "name": "t:sections.new-styles-section.presets.name"
+    }
+  ]
+}
+{% endschema %}

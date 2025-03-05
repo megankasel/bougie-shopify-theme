@@ -1,0 +1,1647 @@
+{
+  "article": [],
+  "blog": [],
+  "brand": [],
+  "collection": [],
+  "company": [],
+  "company_location": [],
+  "location": [],
+  "market": [],
+  "order": [],
+  "page": [],
+  "product": [
+    {
+      "key": "queries",
+      "namespace": "shopify--discovery--product_search_boost",
+      "name": "Search product boosts",
+      "description": "List of search queries for which a product gets higher rank in search results",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "related_products",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Related products",
+      "description": "List of related products",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "related_products_display",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Related products settings",
+      "description": "Determines how related products are displayed along with algorithmic product recommendations",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "complementary_products",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Complementary products",
+      "description": "List of complementary products",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "custom_product",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Product",
+      "description": "Use to indicate whether or not the unique product identifiers (UPIs) GTIN, MPN, and brand are available for your product.",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    },
+    {
+      "key": "color-pattern",
+      "namespace": "shopify",
+      "name": "Color",
+      "description": "Defines the primary color or pattern, such as blue or striped",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "fabric",
+      "namespace": "shopify",
+      "name": "Fabric",
+      "description": "Identifies the type of fabric used in a product, for example, cotton or denim",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "target-gender",
+      "namespace": "shopify",
+      "name": "Target gender",
+      "description": "Identifies the intended gender for a product, such as female, male or unisex",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "shoe-size",
+      "namespace": "shopify",
+      "name": "Shoe size",
+      "description": "Used to define the size of footwear, e.g. Extra large (XL), 9.5",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "age-group",
+      "namespace": "shopify",
+      "name": "Age group",
+      "description": "Defines the target age range for a product, such as adults or kids",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "jewelry-material",
+      "namespace": "shopify",
+      "name": "Jewelry material",
+      "description": "Identifies the main material used in jewelry items, such as gold or enamel",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "jewelry-type",
+      "namespace": "shopify",
+      "name": "Jewelry type",
+      "description": "Distinguishes between types of jewelry, such as fine or imitation jewelry",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "rating",
+      "namespace": "reviews",
+      "name": "Product rating",
+      "description": "Average rating from customers",
+      "type": {
+        "name": "rating",
+        "category": "RATING"
+      }
+    },
+    {
+      "key": "rating_count",
+      "namespace": "reviews",
+      "name": "Product rating count",
+      "description": "Total number of ratings from customers",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "outerwear-clothing-features",
+      "namespace": "shopify",
+      "name": "Outerwear clothing features",
+      "description": "Identifies special characteristics of outerwear, like insulated or waterproof",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "clothing-features",
+      "namespace": "shopify",
+      "name": "Clothing features",
+      "description": "Describes unique properties of apparel, such as water resistant or wrinkle resistant",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "size",
+      "namespace": "shopify",
+      "name": "Size",
+      "description": "Used to specify the size of a product, such as 0-3 months or Extra large (XL)",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "band-color",
+      "namespace": "shopify",
+      "name": "Band color",
+      "description": "Specifies the color of a watch band, e.g. multicolor, rose gold",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "scent",
+      "namespace": "shopify",
+      "name": "Scent",
+      "description": "Specifies the fragrance or aroma of a product, such as vanilla or citrus",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "food-bag-material",
+      "namespace": "shopify",
+      "name": "Food bag material",
+      "description": "Identifies the material used in food storage bags, such as paper or silicone",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "footwear-material",
+      "namespace": "shopify",
+      "name": "Footwear material",
+      "description": "Specifies the type of material used in footwear, such as suede or rubber",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "care-instructions",
+      "namespace": "shopify",
+      "name": "Care instructions",
+      "description": "Provides guidance for product upkeep, such as hand wash or dry clean only",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "shoe-features",
+      "namespace": "shopify",
+      "name": "Shoe features",
+      "description": "Identifies special characteristics of shoes, such as waterproof or lightweight",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "bedding-size",
+      "namespace": "shopify",
+      "name": "Bedding size",
+      "description": "Defines the size category for bedding items, e.g. standard, king",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "care_guide",
+      "namespace": "descriptors",
+      "name": "Care guide",
+      "description": "Instructions for taking care of a product or apparel",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "tool-utensil-material",
+      "namespace": "shopify",
+      "name": "Tool/Utensil material",
+      "description": "Identifies the main material used in a tool or utensil, like stainless steel or teak wood",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "shaving-kit-components",
+      "namespace": "shopify",
+      "name": "Shaving kit components",
+      "description": "Specifies the items included in a shaving kit, such as razor or brush",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "bag-case-closure",
+      "namespace": "shopify",
+      "name": "Bag/Case closure",
+      "description": "Identifies the type of closure used on bags or cases, e.g. key lock, velcro",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "authenticity",
+      "namespace": "shopify",
+      "name": "Authenticity",
+      "description": "Specifies the originality of items, e.g. genuine, replica",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "crystal-system",
+      "namespace": "shopify",
+      "name": "Crystal system",
+      "description": "Identifies the geometric structure of a crystal, such as hexagonal or cubic",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "stone-shape",
+      "namespace": "shopify",
+      "name": "Stone shape",
+      "description": "Defines the geometric shape of a stone,e.g. heart, hexagonal",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "light-color",
+      "namespace": "shopify",
+      "name": "Light color",
+      "description": "Defines the color or hue of light, such as white or multicolor",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "bedding-pieces-included",
+      "namespace": "shopify",
+      "name": "Bedding pieces included",
+      "description": "Specifies the components included in a bedding set, e.g. pillowcase, top sheet",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "skirt-dress-length-type",
+      "namespace": "shopify",
+      "name": "Skirt/Dress length type",
+      "description": "Defines the length of skirts or dresses, such as mini or maxi",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "shape",
+      "namespace": "shopify",
+      "name": "Shape",
+      "description": "Describes the geometric form or shape of a product, such as round or heart",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "barware-material",
+      "namespace": "shopify",
+      "name": "Barware material",
+      "description": "Identifies the main material used in barware items, such as glass or stainless steel",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "sleeve-length-type",
+      "namespace": "shopify",
+      "name": "Sleeve length type",
+      "description": "Specifies the style of sleeves on clothing items, such as short or sleeveless",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "waist-rise",
+      "namespace": "shopify",
+      "name": "Waist rise",
+      "description": "Indicates where on the waist a garment sits, like low, medium or high",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "pants-length-type",
+      "namespace": "shopify",
+      "name": "Pants length type",
+      "description": "Used to defines the length of pants, such as cropped or long",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "bag-case-material",
+      "namespace": "shopify",
+      "name": "Bag/Case material",
+      "description": "Identifies the main material used in a bag or case, such as leather or canvas",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "bag-case-storage-features",
+      "namespace": "shopify",
+      "name": "Bag/Case storage features",
+      "description": "Identifies unique storage elements in bags or cases, such as adjustable dividers or external pockets",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "material",
+      "namespace": "shopify",
+      "name": "Material",
+      "description": "Defines a product's primary material, such as cotton or wool",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "straw-stirrer-design",
+      "namespace": "shopify",
+      "name": "Straw/Stirrer design",
+      "description": "Describes the design or style of a straw or stirrer, such as straight or flexible",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "ink-color",
+      "namespace": "shopify",
+      "name": "Ink color",
+      "description": "Identifies the color of ink, typically for office supplies; e.g. black, silver",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "animal-type",
+      "namespace": "shopify",
+      "name": "Animal type",
+      "description": "Specifies the type of animal a product is intended for, such as ducks, deer, or dogs",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "cover-material",
+      "namespace": "shopify",
+      "name": "Cover material",
+      "description": "Identifies the type of fabric or material used in the product's cover, such as silk or cotton",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "filler-material",
+      "namespace": "shopify",
+      "name": "Filler material",
+      "description": "Identifies the type of material used to fill a product, typically pillows or cushions; e.g. memory foam, feathers",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "cover-color",
+      "namespace": "shopify",
+      "name": "Cover color",
+      "description": "Specifies the primary color of a product's cover, e.g. clear, navy",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "throw-pillow-shape",
+      "namespace": "shopify",
+      "name": "Throw pillow shape",
+      "description": "Identifies the shape of decorative pillows, such as bolster or rectangular",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "drinkware-material",
+      "namespace": "shopify",
+      "name": "Drinkware material",
+      "description": "Specifies the composition of drinkware, such as glass or plastic",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "furniture-fixture-material",
+      "namespace": "shopify",
+      "name": "Furniture/Fixture material",
+      "description": "Identifies the main material used in furniture or fixtures, like wood or metal",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "brush-material",
+      "namespace": "shopify",
+      "name": "Brush material",
+      "description": "Specifies the type of material used in brush construction, such as silicone or plastic",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "accessory-size",
+      "namespace": "shopify",
+      "name": "Accessory size",
+      "description": "Defines the size of an accessory product, such as one size or compact",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "power-source",
+      "namespace": "shopify",
+      "name": "Power source",
+      "description": "Specifies the power source a product uses to operate, such as solar or batteries",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "handle-material",
+      "namespace": "shopify",
+      "name": "Handle material",
+      "description": "Specifies the material used in the product's handle, like bamboo or plastic",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "handle-type",
+      "namespace": "shopify",
+      "name": "Handle type",
+      "description": "Specifies the length or presence of a handle on a product, e.g. short, no handle",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "package-type",
+      "namespace": "shopify",
+      "name": "Package type",
+      "description": "Defines the type of packaging for a product, e.g. jar, pump",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "clothing-accessory-material",
+      "namespace": "shopify",
+      "name": "Clothing accessory material",
+      "description": "Identifies the main material used in clothing accessories, like leather or linen",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "kitchen-utensil-items-included",
+      "namespace": "shopify",
+      "name": "Kitchen utensil items included",
+      "description": "Identifies the tools included in a kitchen utensil set, such as whisk or tongs",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "carry-options",
+      "namespace": "shopify",
+      "name": "Carry options",
+      "description": "Specifies the carrying methods available for items, such as a handle or shoulder strap",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "closure-type",
+      "namespace": "shopify",
+      "name": "Closure type",
+      "description": "Defines the method used to fasten or secure a product, such as zipper or buckles",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "shoe-fit",
+      "namespace": "shopify",
+      "name": "Shoe fit",
+      "description": "Defines the width of footwear, such as narrow or wide",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "toe-style",
+      "namespace": "shopify",
+      "name": "Toe style",
+      "description": "Defines the shape or design of a shoe's toe, such as open or pointed",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "headwear-features",
+      "namespace": "shopify",
+      "name": "Headwear features",
+      "description": "Highlights unique features of headwear, e.g. collapsible, versatile",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "earring-design",
+      "namespace": "shopify",
+      "name": "Earring design",
+      "description": "Describes the style or structure of earrings, such as hoop or stud",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "recommended-age-group",
+      "namespace": "shopify",
+      "name": "Recommended age group",
+      "description": "Identifies the suitable age range for a product, typically toys and games; e.g. babies, teens",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "board-game-mechanics",
+      "namespace": "shopify",
+      "name": "Board game mechanics",
+      "description": "Describes the gameplay structure of a board game, such as strategy or cooperative",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "gameplay-skills",
+      "namespace": "shopify",
+      "name": "Gameplay skills",
+      "description": "Identifies the skills enhanced by a game, like strategic thinking or memory",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "toy-game-material",
+      "namespace": "shopify",
+      "name": "Toy/Game material",
+      "description": "Identifies the main material used in a toy or game, such as plastic or wood",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "bag-case-features",
+      "namespace": "shopify",
+      "name": "Bag/Case features",
+      "description": "Describes the unique characteristics of a bag or case, like waterproof or lightweight",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "tableware-material",
+      "namespace": "shopify",
+      "name": "Tableware material",
+      "description": "Specifies the composition of tableware, such as bone china or earthenware",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "activewear-clothing-features",
+      "namespace": "shopify",
+      "name": "Activewear clothing features",
+      "description": "Identifies unique characteristics of activewear, such as four-way stretch or breathable design",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "suitable-for-skin-type",
+      "namespace": "shopify",
+      "name": "Suitable for skin type",
+      "description": "Specifies products for specific skin conditions, such as dry, aging, or sensitive",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "skin-care-effect",
+      "namespace": "shopify",
+      "name": "Skin care effect",
+      "description": "Defines the intended benefits of skin care products, e.g. anti-aging, plumping",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "constitutive-ingredients",
+      "namespace": "shopify",
+      "name": "Constitutive ingredients",
+      "description": "Specifies the main components used in a product's formulation, e.g. beeswax, rosehip oil",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product-certifications-standards",
+      "namespace": "shopify",
+      "name": "Product certifications & standards",
+      "description": "Indicates the certifications or standards a product meets, such as organic or cruelty free",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product-form",
+      "namespace": "shopify",
+      "name": "Product form",
+      "description": "Defines the format or presentation of a product, typically for health and beauty; e.g. lotion, serum",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "flatware-pieces-included",
+      "namespace": "shopify",
+      "name": "Flatware pieces included",
+      "description": "Specifies the types of utensils in a flatware set, like butter knife or soup spoon",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "rarity",
+      "namespace": "shopify",
+      "name": "Rarity",
+      "description": "Specifies the uniqueness of items, typically for collectibles; e.g. limited edition, ultra rare",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "scarf-shawl-style",
+      "namespace": "shopify",
+      "name": "Scarf/Shawl style",
+      "description": "Identifies the style of scarves and shawls, e.g. blanket, wrap",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "watch-display",
+      "namespace": "shopify",
+      "name": "Watch display",
+      "description": "Distinguishes between watch displays, such as digital or analog",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "watch-features",
+      "namespace": "shopify",
+      "name": "Watch features",
+      "description": "Identifies special characteristics of a watch, such as automatic movement or luminous hands",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "vase-shape",
+      "namespace": "shopify",
+      "name": "Vase shape",
+      "description": "Describes the geometric or organic form of a vase, such as round or bottle",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "decoration-material",
+      "namespace": "shopify",
+      "name": "Decoration material",
+      "description": "Identifies the material used for decoration, such as sequins or feathers",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "nursing-pillow-shape",
+      "namespace": "shopify",
+      "name": "Nursing pillow shape",
+      "description": "Identifies the contour of nursing pillows, such as C-shaped or U-shaped",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "activity",
+      "namespace": "shopify",
+      "name": "Activity",
+      "description": "Specifies the sport or activity the product is designed for, such as tennis or pilates",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "neckline",
+      "namespace": "shopify",
+      "name": "Neckline",
+      "description": "Used to describe the neck shape of a garment, such as V-neck or boat",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "lens-polarization",
+      "namespace": "shopify",
+      "name": "Lens polarization",
+      "description": "Indicates the type of lens polarization in eyewear, e.g. photo polarized",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "top-length-type",
+      "namespace": "shopify",
+      "name": "Top length type",
+      "description": "Defines the length of tops or shirts, like crop top or long",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "dress-occasion",
+      "namespace": "shopify",
+      "name": "Dress occasion",
+      "description": "Specifies the intended occasion for a dress, e.g. holiday, everyday",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "pacifier-teether-design",
+      "namespace": "shopify",
+      "name": "Pacifier/Teether design",
+      "description": "Describes the design of baby pacifiers and teethers, e.g. ring-shaped, orthodontic",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "toy-tool-type",
+      "namespace": "shopify",
+      "name": "Toy tool type",
+      "description": "Identifies the type of toy tool in a pretend play set, like a drill or hammer",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "swimwear-features",
+      "namespace": "shopify",
+      "name": "Swimwear features",
+      "description": "Identifies special characteristics of swimwear, like quick drying or UPF sun protection",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "dress-style",
+      "namespace": "shopify",
+      "name": "Dress style",
+      "description": "Identifies the design of a dress, such as wrap or empire waist",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "fit",
+      "namespace": "shopify",
+      "name": "Fit",
+      "description": "Describes the fit of a garment, typically pant shape; e.g. skinny leg, wide",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "heel-height-type",
+      "namespace": "shopify",
+      "name": "Heel height type",
+      "description": "Defines the height of a shoe's heel, such as flat or high",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "occasion-style",
+      "namespace": "shopify",
+      "name": "Occasion style",
+      "description": "Helps categorize products based on occasion, e.g. casual, dress",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "sandal-style",
+      "namespace": "shopify",
+      "name": "Sandal style",
+      "description": "Specifies the style of sandals, such as ankle strap or lace-up",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "coffee-tea-set-pieces-included",
+      "namespace": "shopify",
+      "name": "Coffee/Tea set pieces included",
+      "description": "Details the individual items within a coffee or tea set, like cups and saucers",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "grip-texture",
+      "namespace": "shopify",
+      "name": "Grip texture",
+      "description": "Describes the surface feel of a product's grip, like smooth or textured",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "mount-stand-features",
+      "namespace": "shopify",
+      "name": "Mount/Stand features",
+      "description": "Details the specific characteristics of a product's mount or stand, like adjustable angle or foldable",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "mounting-type",
+      "namespace": "shopify",
+      "name": "Mounting type",
+      "description": "Specifies how a product is installed or attached, such as clip-on or suction cup",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "suitable-space",
+      "namespace": "shopify",
+      "name": "Suitable space",
+      "description": "Defines the ideal location for product use, e.g. indoors, above ground",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "outdoor-furniture-items-included",
+      "namespace": "shopify",
+      "name": "Outdoor furniture items included",
+      "description": "Identifies the specific items included in an outdoor furniture set, such as chairs or table",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "intimate-apparel-features",
+      "namespace": "shopify",
+      "name": "Intimate apparel features",
+      "description": "Describes special characteristics of intimate apparel, like breathable design or comfort fit",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "wallet-features",
+      "namespace": "shopify",
+      "name": "Wallet features",
+      "description": "Describes special characteristics of wallets, like RFID protection or compact design",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "bib-design",
+      "namespace": "shopify",
+      "name": "Bib design",
+      "description": "Defines the style or type of baby bib, such as bandana or sleeved",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "dietary-preferences",
+      "namespace": "shopify",
+      "name": "Dietary preferences",
+      "description": "Helps identify products suitable for specific diets, e.g. vegan, nut free",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "detailed-ingredients",
+      "namespace": "shopify",
+      "name": "Detailed ingredients",
+      "description": "Lists specific components used in health and beauty, e.g. Vitamin C, probiotics",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "suitable-for-hair-type",
+      "namespace": "shopify",
+      "name": "Suitable for hair type",
+      "description": "Specifies the hair needs a product is designed for, e.g. curly, fine",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "tea-input-type",
+      "namespace": "shopify",
+      "name": "Tea input type",
+      "description": "Specifies the preparation style of tea, e.g. bags, K-cups",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "flavor",
+      "namespace": "shopify",
+      "name": "Flavor",
+      "description": "Specifies the taste or flavor of a product, e.g. vanilla, mint",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "coffee-product-form",
+      "namespace": "shopify",
+      "name": "Coffee product form",
+      "description": "Specifies the type of coffee product, such as ground or beans",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "country",
+      "namespace": "shopify",
+      "name": "Country",
+      "description": "Specifies the country associated with the product, such as Japan or Germany",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "caffeine-content",
+      "namespace": "shopify",
+      "name": "Caffeine content",
+      "description": "Indicates the amount of caffeine present in a product, e.g. decaffeinated, low caffeine",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "dog-age-group",
+      "namespace": "shopify",
+      "name": "Dog age group",
+      "description": "Helps sort dog supplies according to the dog's life stage, e.g. puppy, senior",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "dog-toy-type",
+      "namespace": "shopify",
+      "name": "Dog toy type",
+      "description": "Classifies the type of dog toy, such as plush or squeaky",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "suitable-for-breed-size",
+      "namespace": "shopify",
+      "name": "Suitable for breed size",
+      "description": "Identifies the appropriate breed size for pet products, such as large or medium",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "skirt-style",
+      "namespace": "shopify",
+      "name": "Skirt style",
+      "description": "Describes the design or cut of a skirt, such as pencil or pleated",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "dry-wet-cleaning",
+      "namespace": "shopify",
+      "name": "Dry/Wet cleaning",
+      "description": "Specifies if products are suitable for dry or wet cleaning",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "basket-material",
+      "namespace": "shopify",
+      "name": "Basket material",
+      "description": "Specifies the type of material used in a basket, such as wicker or metal",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "baby-toddler-sleepwear-style",
+      "namespace": "shopify",
+      "name": "Baby/Toddler sleepwear style",
+      "description": "Describes the design of baby or toddler sleepwear, like footed or onesie",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "coffee-roast",
+      "namespace": "shopify",
+      "name": "Coffee roast",
+      "description": "Defines the roast level of coffee products, e.g. light, medium, dark",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "one-piece-style",
+      "namespace": "shopify",
+      "name": "One-piece style",
+      "description": "Identifies the specific style of a one-piece garment, like a jumpsuit or romper",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "allergen-information",
+      "namespace": "shopify",
+      "name": "Allergen information",
+      "description": "Indicates potential allergens present in food or beverages, such as wheat or peanuts",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "skin-care-features",
+      "namespace": "shopify",
+      "name": "Skin care features",
+      "description": "Identifies the benefits of skin care items, such as long lasting or UVA/UVB protection",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "dietary-supplements",
+      "namespace": "shopify",
+      "name": "Dietary supplements",
+      "description": "Identifies the added nutrients in a product, like calcium or probiotics",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "filter-material",
+      "namespace": "shopify",
+      "name": "Filter material",
+      "description": "Specifies the type of material used in filters, typically for coffee; e.g. paper, hemp",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "grind-size",
+      "namespace": "shopify",
+      "name": "Grind size",
+      "description": "Indicates the coarseness or fineness of coffee grounds, such as extra coarse or fine",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "dinnerware-pieces-included",
+      "namespace": "shopify",
+      "name": "Dinnerware pieces included",
+      "description": "Defines the components of a dinnerware collection, such as dinner plates or serving bowl",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "infant-age-group",
+      "namespace": "shopify",
+      "name": "Infant age group",
+      "description": "Classifies products suitable for specific infant age ranges, e.g. newborn, 0-6 months",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "bracelet-design",
+      "namespace": "shopify",
+      "name": "Bracelet design",
+      "description": "Specifies the design of a bracelet, such as charm or cuff",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "desk-organizer-features",
+      "namespace": "shopify",
+      "name": "Desk organizer features",
+      "description": "Describes the specific features of a desk organizer, such as adjustable dividers or built-in compartments",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "connection-type",
+      "namespace": "shopify",
+      "name": "Connection type",
+      "description": "Specifies the type of connection used by electronics, such as wired or Bluetooth",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "keyboard-format",
+      "namespace": "shopify",
+      "name": "Keyboard format",
+      "description": "Defines the size and layout of a keyboard, such as full-size or compact",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "keyboard-layout",
+      "namespace": "shopify",
+      "name": "Keyboard layout",
+      "description": "Specifies the arrangement of keys on a keyboard, e.g. QWERTY, Workman",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "pointing-device",
+      "namespace": "shopify",
+      "name": "Pointing device",
+      "description": "Defines the device used for navigating on a computer screen, e.g. mouse buttons, touchpad",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "keyboard-specialized-features",
+      "namespace": "shopify",
+      "name": "Keyboard specialized features",
+      "description": "Identifies unique characteristics of a keyboard, like adjustable angle or backlighting",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "application-method",
+      "namespace": "shopify",
+      "name": "Application method",
+      "description": "Defines how a product is applied or used, e.g. gel, liquid, spray",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "paint-type",
+      "namespace": "shopify",
+      "name": "Paint type",
+      "description": "Specifies the variety of paint in arts & crafts items, like enamel or watercolor",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "item-condition",
+      "namespace": "shopify",
+      "name": "Item condition",
+      "description": "Indicates the quality of an item, typically vehicles or vehicle parts; e.g. certified pre-owned, refurbished",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "manufacturer-type",
+      "namespace": "shopify",
+      "name": "Manufacturer type",
+      "description": "Specifies the source of vehicle parts or accessories, such as genuine or third-party",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "item-material",
+      "namespace": "shopify",
+      "name": "Item material",
+      "description": "Specifies the primary substance of an item, typically for vehicle parts and accessories; e.g. copper, fiberglass",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "tote-handle-type",
+      "namespace": "shopify",
+      "name": "Tote handle type",
+      "description": "Identifies the style of handles on a tote bag, such as short or long",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "baby-toddler-hat-style",
+      "namespace": "shopify",
+      "name": "Baby/Toddler hat style",
+      "description": "Describes the style of hats for babies or toddlers, such as bucket hat or sun hat",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "baby-toddler-clothing-features",
+      "namespace": "shopify",
+      "name": "Baby/Toddler clothing features",
+      "description": "Highlights special features in baby/toddler clothing, like adjustable waistband or UV protection",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "sneaker-style",
+      "namespace": "shopify",
+      "name": "Sneaker style",
+      "description": "Identifies the design or type of sneakers, such as athletic or high-top",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "boot-style",
+      "namespace": "shopify",
+      "name": "Boot style",
+      "description": "Specifies the style of boots, e.g. booties",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "firmness",
+      "namespace": "shopify",
+      "name": "Firmness",
+      "description": "Defines the level of firmness in items like furniture or mattresses, e.g. extra soft, firm",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "materials_tab",
+      "namespace": "custom",
+      "name": "Materials Tab",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "flatware-material",
+      "namespace": "shopify",
+      "name": "Flatware material",
+      "description": "Identifies the composition of flatware items, such as stainless steel or silver",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "binder-ring-shape",
+      "namespace": "shopify",
+      "name": "Binder ring shape",
+      "description": "Describes the binder rings in office supplies, such as round or D-shaped",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "variant": [
+    {
+      "key": "age_group",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Age Group",
+      "description": "The demographic for which your product is intended.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "condition",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Condition",
+      "description": "The condition of your product at time of sale.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "gender",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Gender",
+      "description": "The gender for which your product is intended.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "mpn",
+      "namespace": "mm-google-shopping",
+      "name": "Google: MPN",
+      "description": "Your product’s Manufacturer Part Number (MPN).",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "size_type",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Size Type",
+      "description": "Your apparel product’s cut.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "size_system",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Size System",
+      "description": "The country of the size system used by your product.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_0",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 0",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_1",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 1",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_2",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 2",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_3",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 3",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_4",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 4",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    }
+  ],
+  "shop": []
+}

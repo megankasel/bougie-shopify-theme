@@ -1,0 +1,289 @@
+{% stylesheet %}
+  ul.custom--tabs {
+    list-style-type: none;
+    width: 100%;
+    max-width: 100%;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    font-family: var(--font-body-family);
+    font-size: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .custom--tabs .tab__list {
+    display: inline-block;
+  }
+
+  .custom__tab-content {
+    display: none;
+  }
+
+  .custom__tab-content.active {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .tab__list h6.custom-tab {
+    display: inline-block !important;
+    padding: 10px 15px !important;
+    cursor: pointer !important;
+    margin: 0px !important;
+    border-bottom: 2px solid transparent;
+    font-family: var(--font-heading-family);
+  }
+
+  .tab__list h6.custom-tab.active {
+    color: black !important;
+    border-bottom: 3px solid black !important;
+    font-family: var(--font-heading-family);
+  }
+
+  .collection-products {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 15px 0;
+    scrollbar-width: thin;
+    scrollbar-color: #7D998D transparent;
+    width: 100vw; /* Full width of the viewport */
+    margin-left: 0; /* No left margin */
+    margin-right: 0; /* No right margin */
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .collection-products::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .collection-products::-webkit-scrollbar-thumb {
+    background: #7D998D;
+    border-radius: 10px;
+  }
+
+  .product-card {
+    flex: 0 0 auto; /* Prevent cards from stretching */
+    width: 300px; /* Adjust width */
+    height: 612px;
+    border: 2px solid #B59F63;
+    border-radius: 0px;
+    padding: 12px;
+    text-align: center;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /*space-between*/
+  }
+
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-card img {
+    width: 254px;
+    height: 387px;
+    object-fit: cover;
+    border-radius: 0px;
+    transition: opacity 0.3s ease;
+  }
+
+  .product-card:hover img {
+    opacity: 0.8;
+  }
+
+  .product-card p {
+    margin: 8px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    font-weight: none;
+    text-align: left;
+  }
+
+  .product-card a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .product-card .product-price {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #000;
+  }
+
+  .view-all-card {
+    position: relative;
+    width: 300px; 
+    height: 612px; 
+    border: 0px solid #B59F63;
+    border-radius: 0px;
+    text-align: left;
+    
+    /*background: url('https://plus.unsplash.com/premium_photo-1683144245642-1406f0a42445?q=80&w=1907&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat; /* Palitan ng image URL mo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    font-weight: bold;
+    text-decoration: none;
+    flex-shrink: 0;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+   .view-all-card:hover::after {
+      background: rgba(255, 255, 255, 0.8); /* White transparent overlay */
+      transition: background 0.3s ease;
+  }
+ 
+{% endstylesheet %}
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward_ios" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios" />
+</head>
+
+<!-- Unique Section Wrapper -->
+<div class="custom-tabs-section" data-section-id="{{ section.id }}">
+  <ul class="custom--tabs page-width">
+    {% for block in section.blocks %}
+      {% if block.type == 'tab' %}
+        <li class="tab__list {% if forloop.first %}active{% endif %}">
+          <h6 class="custom-tab {% if forloop.first %}active{% endif %}" 
+              data-content-id="content--{{ block.id }}--{{ section.id }}"
+              data-section-id="{{ section.id }}">
+            {{ block.settings.heading }}
+          </h6>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  {% for block in section.blocks %}
+   
+    {% if block.type == 'tab' %}
+      <div id="content--{{ block.id }}--{{ section.id }}" 
+           class="custom__tab-content page-width {% if forloop.first %}active{% endif %}" 
+           data-section-id="{{ section.id }}">
+        {% if block.settings.collection != blank %}
+          <div class="collection-products" id="collection--{{ block.id }}">
+            {% for product in block.settings.collection.products limit: 10 %}
+              <div class="product-card">
+                <a href="{{ product.url }}">
+                  <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+                  <p>{{ product.title }}</p>
+                  <p class="product-price">{{ product.price | money }}</p>
+                </a>
+              </div>
+            {% endfor %}
+            <!--<a href="{ block.settings.collection.url }}" class="view-all-card" style="background-image: url('{ block.settings.view_all_tabs_card_image | img_url: 'medium' }}'); background-position: center; background-size: cover; background-repeat: no-repeat;">VIEW ALL PRODUCTS</a>-->
+                 <a href="{{ block.settings.collection.url }}" class="view-all-card" 
+                   style="background-image: url('{{ section.settings.view_all_tabs_card_image | img_url: 'medium' }}'); 
+                          background-position: center; 
+                          background-size: cover; 
+                          background-repeat: no-repeat;
+                          color: {{ section.settings.view_all_tabs_text_color }};">
+                  VIEW ALL PRODUCTS
+                </a>
+
+          </div>
+        {% else %}
+          <p>No products found in this collection.</p>
+        {% endif %}
+        
+      
+      </div>
+    {% endif %}
+  {% endfor %}
+  
+</div>
+
+{% javascript %}
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".custom-tabs-section").forEach(section => {
+      let sectionId = section.dataset.sectionId;
+      let tabs = section.querySelectorAll(".custom-tab");
+      let tabContents = section.querySelectorAll(".custom__tab-content");
+
+      // Set the first tab as active by default
+      if (tabs.length > 0 && tabContents.length > 0) {
+        tabs[0].classList.add("active");
+        tabContents[0].classList.add("active");
+      }
+
+      tabs.forEach(tab => {
+        tab.addEventListener("click", function () {
+          let contentId = this.dataset.contentId;
+
+          // Remove active class only within the same section
+          tabs.forEach(t => t.classList.remove("active"));
+          tabContents.forEach(c => c.classList.remove("active"));
+
+          // Activate selected tab and content
+          this.classList.add("active");
+          document.getElementById(contentId).classList.add("active");
+        });
+      });
+    });
+  });
+
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Tabs",
+  "settings": [
+     {
+      "type": "image_picker", 
+      "id": "view_all_tabs_card_image",
+      "label": "View All Tabs Image"
+    },
+    {
+      "type": "color", 
+      "id": "view_all_tabs_text_color",
+      "label": "View All Tabs Text Color",
+      "default": "#FFFFFF"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tabs",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        }
+        
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tabs",
+      "blocks":[
+        {
+          "type": "tab"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
