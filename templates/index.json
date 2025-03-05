@@ -1,1 +1,508 @@
-{"sections":{"slideshow_bMXkeV":{"type":"slideshow","blocks":{"slide_WUBAeX":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/handbag-rattan.jpg","heading":"<strong>New Style, Greener Life<\/strong>","heading_size":"h1","subheading":"High-end products made from sustainable materials like bamboo, organic cotton, or vegan leather.","button_label":"Eco-Luxe","link":"shopify:\/\/collections\/eco-tailgate-collection","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"","text_alignment_mobile":"center"}},"slide_KFcY9t":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/rubber-spare-tires.jpg","heading":"<strong>Reduce Waste<\/strong>","heading_size":"h1","subheading":"Everyday essentials like tote bags, earrings, and home décor made from recycled rubber. <strong>BE A PART OF SOMETHING BIGGER!<\/strong>","button_label":"Rubber","link":"shopify:\/\/collections\/rubber-made","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"scheme-1","text_alignment_mobile":"center"}},"slide_dGUnVf":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/Straw_banner.png","heading":"Straw Collection","heading_size":"h1","subheading":"","button_label":"STRAW","link":"shopify:\/\/blogs\/ecomaterials","button_style_secondary":true,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"scheme-5","text_alignment_mobile":"center"}},"slide_Lmcr3k":{"type":"slide","settings":{"heading":"Image slide","heading_size":"h1","subheading":"Tell your brand's story through images","button_label":"Button label","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":true,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"scheme-1","text_alignment_mobile":"center"}}},"block_order":["slide_WUBAeX","slide_KFcY9t","slide_dGUnVf","slide_Lmcr3k"],"settings":{"layout":"full_bleed","slide_height":"medium","slider_visual":"dots","auto_rotate":true,"change_slides_speed":9,"image_behavior":"ambient","show_text_below":true,"accessibility_info":""}},"rich_text_WBmQLA":{"type":"rich-text","blocks":{"heading_HzkPaW":{"type":"heading","settings":{"heading":"Essentials","heading_size":"h1"}}},"block_order":["heading_HzkPaW"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"","full_width":true,"padding_top":40,"padding_bottom":4}},"custom_tabs_bwgaaF":{"type":"custom-tabs","blocks":{"tab_nXdrVa":{"type":"tab","settings":{"heading":"Green Tech","collection":"green-tech"}},"tab_gjyUih":{"type":"tab","settings":{"heading":"Shoes","collection":"shoes"}},"tab_Endwtb":{"type":"tab","settings":{"heading":"Handbags","collection":"handbags"}},"tab_HYEq7h":{"type":"tab","settings":{"heading":"Jewelry","collection":"jewelry"}},"tab_NjccyU":{"type":"tab","settings":{"heading":"Accessories","collection":"accessories"}},"tab_AQQTqH":{"type":"tab","settings":{"heading":"Tailgating","collection":"eco-tailgate-collection"}}},"block_order":["tab_nXdrVa","tab_gjyUih","tab_Endwtb","tab_HYEq7h","tab_NjccyU","tab_AQQTqH"],"settings":{"view_all_tabs_card_image":"shopify:\/\/shop_images\/Screenshot_2.png","view_all_tabs_text_color":"#ffffff"}},"custom_tabs_DgLigX":{"type":"custom-tabs","blocks":{"tab_YngEQE":{"type":"tab","settings":{"heading":"Kitchen","collection":"kitchen"}},"tab_xEYqte":{"type":"tab","settings":{"heading":"Bed & Bath","collection":"bed-bath"}},"tab_Jd4t9C":{"type":"tab","settings":{"heading":"Health & Beauty","collection":"health-beauty"}},"tab_HjbJ8R":{"type":"tab","settings":{"heading":"Pets","collection":"pet"}},"tab_wAtDVW":{"type":"tab","settings":{"heading":"Home Decor","collection":"household"}}},"block_order":["tab_YngEQE","tab_xEYqte","tab_Jd4t9C","tab_HjbJ8R","tab_wAtDVW"],"settings":{"view_all_tabs_card_image":"shopify:\/\/shop_images\/bamboo-kitchen-utensils-set-8-pack-wooden-cooking-utensils-kitchen-eco-friendly-sustainable-products-bougiegreen-47628180291879.jpg","view_all_tabs_text_color":"#ffffff"}},"rich_text_QWGELn":{"type":"rich-text","blocks":{"heading_XaGcnb":{"type":"heading","settings":{"heading":"Shop by Materials","heading_size":"h1"}}},"block_order":["heading_XaGcnb"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"scheme-1","full_width":true,"padding_top":40,"padding_bottom":20}},"custom_tabs_n8e44Y":{"type":"custom-tabs","blocks":{"tab_7DUDkH":{"type":"tab","settings":{"heading":"","collection":""}},"tab_dtiAti":{"type":"tab","settings":{"heading":"Bamboo","collection":"bamboo"}},"tab_Y3WLMH":{"type":"tab","settings":{"heading":"Cork","collection":"cork"}},"tab_c97CLm":{"type":"tab","settings":{"heading":"Hemp","collection":"hemp"}},"tab_g7DcDX":{"type":"tab","settings":{"heading":"Linen","collection":"linen"}},"tab_BwUMHx":{"type":"tab","settings":{"heading":"Plastic","collection":""}},"tab_jagFe6":{"type":"tab","settings":{"heading":"Silk","collection":""}},"tab_Rjdk46":{"type":"tab","settings":{"heading":"Straw","collection":""}},"tab_BhUVbc":{"type":"tab","settings":{"heading":"Cashmere","collection":"cashmere"}},"tab_eKiFXf":{"type":"tab","settings":{"heading":"Wool","collection":""}},"tab_jjFqtr":{"type":"tab","settings":{"heading":"Vegan","collection":"vegan"}},"tab_VMHzG7":{"type":"tab","settings":{"heading":"Modal","collection":"modal"}}},"block_order":["tab_7DUDkH","tab_dtiAti","tab_Y3WLMH","tab_c97CLm","tab_g7DcDX","tab_BwUMHx","tab_jagFe6","tab_Rjdk46","tab_BhUVbc","tab_eKiFXf","tab_jjFqtr","tab_VMHzG7"],"settings":{"view_all_tabs_text_color":"#ffffff"}},"arrivals_4T3FkX":{"type":"arrivals","settings":{"collection":"new-arrivals"}},"collection_list_GWmecj":{"type":"collection-list","blocks":{"featured_collection_U4UwMF":{"type":"featured_collection","settings":{"collection":"womens-clothing"}},"featured_collection_F8WJ7H":{"type":"featured_collection","settings":{"collection":"mens-clothing"}},"featured_collection_3aK67t":{"type":"featured_collection","settings":{"collection":"kids"}},"featured_collection_x4GMA4":{"type":"featured_collection","settings":{"collection":"accessories"}},"featured_collection_4e47WY":{"type":"featured_collection","settings":{"collection":"health-beauty"}},"featured_collection_tdXnFc":{"type":"featured_collection","settings":{"collection":"household"}}},"block_order":["featured_collection_U4UwMF","featured_collection_F8WJ7H","featured_collection_3aK67t","featured_collection_x4GMA4","featured_collection_4e47WY","featured_collection_tdXnFc"],"settings":{"title":"Category","heading_size":"h1","image_ratio":"portrait","columns_desktop":3,"color_scheme":"","show_view_all":false,"columns_mobile":"1","swipe_on_mobile":false,"padding_top":48,"padding_bottom":36}},"featured_blog_kk8fhB":{"type":"featured-blog","settings":{"heading":"Blog posts","heading_size":"h1","blog":"ecomaterials","post_limit":3,"columns_desktop":3,"color_scheme":"","show_image":true,"show_date":true,"show_author":false,"show_view_all":true,"padding_top":36,"padding_bottom":36}}},"order":["slideshow_bMXkeV","rich_text_WBmQLA","custom_tabs_DgLigX","custom_tabs_bwgaaF","rich_text_QWGELn","custom_tabs_n8e44Y","arrivals_4T3FkX","collection_list_GWmecj","featured_blog_kk8fhB"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_bMXkeV": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_WUBAeX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/handbag-rattan.jpg",
+            "heading": "<strong>New Style, Greener Life</strong>",
+            "heading_size": "h1",
+            "subheading": "High-end products made from sustainable materials like bamboo, organic cotton, or vegan leather.",
+            "button_label": "Eco-Luxe",
+            "link": "shopify://collections/eco-tailgate-collection",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_KFcY9t": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/rubber-spare-tires.jpg",
+            "heading": "<strong>Reduce Waste</strong>",
+            "heading_size": "h1",
+            "subheading": "Everyday essentials like tote bags, earrings, and home décor made from recycled rubber. <strong>BE A PART OF SOMETHING BIGGER!</strong>",
+            "button_label": "Rubber",
+            "link": "shopify://collections/rubber-made",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_dGUnVf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Straw_banner.png",
+            "heading": "Straw Collection",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "STRAW",
+            "link": "shopify://blogs/ecomaterials",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_Lmcr3k": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_WUBAeX",
+        "slide_KFcY9t",
+        "slide_dGUnVf",
+        "slide_Lmcr3k"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 9,
+        "image_behavior": "ambient",
+        "show_text_below": true,
+        "accessibility_info": ""
+      }
+    },
+    "rich_text_WBmQLA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HzkPaW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Essentials",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HzkPaW"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "custom_tabs_DgLigX": {
+      "type": "custom-tabs",
+      "blocks": {
+        "tab_YngEQE": {
+          "type": "tab",
+          "settings": {
+            "heading": "Kitchen",
+            "collection": "kitchen"
+          }
+        },
+        "tab_xEYqte": {
+          "type": "tab",
+          "settings": {
+            "heading": "Bed & Bath",
+            "collection": "bed-bath"
+          }
+        },
+        "tab_Jd4t9C": {
+          "type": "tab",
+          "settings": {
+            "heading": "Health & Beauty",
+            "collection": "health-beauty"
+          }
+        },
+        "tab_HjbJ8R": {
+          "type": "tab",
+          "settings": {
+            "heading": "Pets",
+            "collection": "pet"
+          }
+        },
+        "tab_wAtDVW": {
+          "type": "tab",
+          "settings": {
+            "heading": "Home Decor",
+            "collection": "household"
+          }
+        }
+      },
+      "block_order": [
+        "tab_YngEQE",
+        "tab_xEYqte",
+        "tab_Jd4t9C",
+        "tab_HjbJ8R",
+        "tab_wAtDVW"
+      ],
+      "settings": {
+        "view_all_tabs_card_image": "shopify://shop_images/bamboo-kitchen-utensils-set-8-pack-wooden-cooking-utensils-kitchen-eco-friendly-sustainable-products-bougiegreen-47628180291879.jpg",
+        "view_all_tabs_text_color": "#ffffff"
+      }
+    },
+    "rich_text_Jxa93m": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EhqcPm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Featured Products",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EhqcPm"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "custom_tabs_bwgaaF": {
+      "type": "custom-tabs",
+      "blocks": {
+        "tab_nXdrVa": {
+          "type": "tab",
+          "settings": {
+            "heading": "Green Tech",
+            "collection": "green-tech"
+          }
+        },
+        "tab_gjyUih": {
+          "type": "tab",
+          "settings": {
+            "heading": "Shoes",
+            "collection": "shoes"
+          }
+        },
+        "tab_Endwtb": {
+          "type": "tab",
+          "settings": {
+            "heading": "Handbags",
+            "collection": "handbags"
+          }
+        },
+        "tab_HYEq7h": {
+          "type": "tab",
+          "settings": {
+            "heading": "Jewelry",
+            "collection": "jewelry"
+          }
+        },
+        "tab_NjccyU": {
+          "type": "tab",
+          "settings": {
+            "heading": "Accessories",
+            "collection": "accessories"
+          }
+        },
+        "tab_AQQTqH": {
+          "type": "tab",
+          "settings": {
+            "heading": "Tailgating",
+            "collection": "eco-tailgate-collection"
+          }
+        }
+      },
+      "block_order": [
+        "tab_nXdrVa",
+        "tab_gjyUih",
+        "tab_Endwtb",
+        "tab_HYEq7h",
+        "tab_NjccyU",
+        "tab_AQQTqH"
+      ],
+      "settings": {
+        "view_all_tabs_card_image": "shopify://shop_images/Screenshot_2.png",
+        "view_all_tabs_text_color": "#ffffff"
+      }
+    },
+    "rich_text_QWGELn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XaGcnb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop by Material",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XaGcnb"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "custom_tabs_n8e44Y": {
+      "type": "custom-tabs",
+      "blocks": {
+        "tab_dtiAti": {
+          "type": "tab",
+          "settings": {
+            "heading": "Bamboo",
+            "collection": "bamboo"
+          }
+        },
+        "tab_Y3WLMH": {
+          "type": "tab",
+          "settings": {
+            "heading": "Cork",
+            "collection": "cork"
+          }
+        },
+        "tab_c97CLm": {
+          "type": "tab",
+          "settings": {
+            "heading": "Hemp",
+            "collection": "hemp"
+          }
+        },
+        "tab_g7DcDX": {
+          "type": "tab",
+          "settings": {
+            "heading": "Linen",
+            "collection": "linen"
+          }
+        },
+        "tab_BwUMHx": {
+          "type": "tab",
+          "settings": {
+            "heading": "Plastic",
+            "collection": ""
+          }
+        },
+        "tab_jagFe6": {
+          "type": "tab",
+          "settings": {
+            "heading": "Silk",
+            "collection": ""
+          }
+        },
+        "tab_Rjdk46": {
+          "type": "tab",
+          "settings": {
+            "heading": "Straw",
+            "collection": ""
+          }
+        },
+        "tab_BhUVbc": {
+          "type": "tab",
+          "settings": {
+            "heading": "Cashmere",
+            "collection": "cashmere"
+          }
+        },
+        "tab_eKiFXf": {
+          "type": "tab",
+          "settings": {
+            "heading": "Wool",
+            "collection": ""
+          }
+        },
+        "tab_jjFqtr": {
+          "type": "tab",
+          "settings": {
+            "heading": "Vegan",
+            "collection": "vegan"
+          }
+        },
+        "tab_VMHzG7": {
+          "type": "tab",
+          "settings": {
+            "heading": "Modal",
+            "collection": "modal"
+          }
+        }
+      },
+      "block_order": [
+        "tab_dtiAti",
+        "tab_Y3WLMH",
+        "tab_c97CLm",
+        "tab_g7DcDX",
+        "tab_BwUMHx",
+        "tab_jagFe6",
+        "tab_Rjdk46",
+        "tab_BhUVbc",
+        "tab_eKiFXf",
+        "tab_jjFqtr",
+        "tab_VMHzG7"
+      ],
+      "settings": {
+        "view_all_tabs_text_color": "#ffffff"
+      }
+    },
+    "arrivals_4T3FkX": {
+      "type": "arrivals",
+      "disabled": true,
+      "settings": {
+        "collection": "new-arrivals"
+      }
+    },
+    "featured_collection_B4r8BQ": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivals",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-arrivals",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "outline",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-4",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_GWmecj": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_U4UwMF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-clothing"
+          }
+        },
+        "featured_collection_F8WJ7H": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-clothing"
+          }
+        },
+        "featured_collection_3aK67t": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kids"
+          }
+        },
+        "featured_collection_x4GMA4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        },
+        "featured_collection_4e47WY": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "health-beauty"
+          }
+        },
+        "featured_collection_tdXnFc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "household"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_U4UwMF",
+        "featured_collection_F8WJ7H",
+        "featured_collection_3aK67t",
+        "featured_collection_x4GMA4",
+        "featured_collection_4e47WY",
+        "featured_collection_tdXnFc"
+      ],
+      "settings": {
+        "title": "Shop by Category",
+        "heading_size": "h1",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 48,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_kk8fhB": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "ecomaterials",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "slideshow_bMXkeV",
+    "rich_text_WBmQLA",
+    "custom_tabs_DgLigX",
+    "rich_text_Jxa93m",
+    "custom_tabs_bwgaaF",
+    "rich_text_QWGELn",
+    "custom_tabs_n8e44Y",
+    "arrivals_4T3FkX",
+    "featured_collection_B4r8BQ",
+    "collection_list_GWmecj",
+    "featured_blog_kk8fhB"
+  ]
+}

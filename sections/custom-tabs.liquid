@@ -6,58 +6,83 @@
     display: flex !important;
     flex-wrap: wrap !important;
     font-family: var(--font-body-family);
-    font-size: 30px;
-    padding-left: 0;
+    font-size: 24px;
+    padding-left: 20px;
     padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 0 20px 0;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
   }
 
   .custom--tabs .tab__list {
     display: inline-block;
+    margin: 0 16px 0 0;
   }
 
   .custom__tab-content {
     display: none;
+    margin-top: 30px;
+    width: 100%;
+    overflow: hidden; /* Prevents horizontal scroll */
+    padding-left: 20px; /* Added left padding to match the tabs */
+    padding-right: 20px; /* Added right padding for balance */
   }
 
   .custom__tab-content.active {
     display: block;
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
+    animation: fadeIn 0.5s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 
   .tab__list h6.custom-tab {
     display: inline-block !important;
-    padding: 10px 15px !important;
+    padding: 12px 20px !important;
     cursor: pointer !important;
     margin: 0px !important;
     border-bottom: 2px solid transparent;
     font-family: var(--font-heading-family);
+    transition: all 0.3s ease;
+    position: relative;
+    font-weight: 500;
+  }
+
+  .tab__list h6.custom-tab:hover {
+    color: rgba(var(--color-foreground), 0.75) !important;
   }
 
   .tab__list h6.custom-tab.active {
     color: black !important;
     border-bottom: 3px solid black !important;
     font-family: var(--font-heading-family);
+    font-weight: 600;
   }
 
   .collection-products {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     overflow-x: auto;
-    padding: 15px 0;
+    padding: 20px 0;
     scrollbar-width: thin;
     scrollbar-color: #7D998D transparent;
-    width: 100vw; /* Full width of the viewport */
-    margin-left: 0; /* No left margin */
-    margin-right: 0; /* No right margin */
+    width: 100%;
+    margin: 0;
     justify-content: flex-start;
     position: relative;
+    -webkit-overflow-scrolling: touch;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0; /* Remove left padding to maintain alignment with tabs */
   }
 
   .collection-products::-webkit-scrollbar {
-    height: 6px;
+    height: 8px;
   }
 
   .collection-products::-webkit-scrollbar-thumb {
@@ -66,39 +91,40 @@
   }
 
   .product-card {
-    flex: 0 0 auto; /* Prevent cards from stretching */
-    width: 300px; /* Adjust width */
+    flex: 0 0 auto;
+    width: 300px;
     height: 612px;
     border: 2px solid #B59F63;
-    border-radius: 0px;
-    padding: 12px;
+    border-radius: 8px;
+    padding: 16px;
     text-align: center;
     background: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /*space-between*/
+    justify-content: space-between;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
   }
 
   .product-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
   }
 
   .product-card img {
-    width: 254px;
+    width: 100%;
     height: 387px;
     object-fit: cover;
-    border-radius: 0px;
+    border-radius: 4px;
     transition: opacity 0.3s ease;
   }
 
   .product-card:hover img {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   .product-card p {
-    margin: 8px 0;
+    margin: 10px 0;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -112,6 +138,9 @@
   .product-card a {
     text-decoration: none;
     color: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 
   .product-card .product-price {
@@ -119,6 +148,7 @@
     font-weight: bold;
     text-align: left;
     color: #000;
+    margin-top: auto;
   }
 
   .view-all-card {
@@ -126,10 +156,8 @@
     width: 300px; 
     height: 612px; 
     border: 0px solid #B59F63;
-    border-radius: 0px;
-    text-align: left;
-    
-    /*background: url('https://plus.unsplash.com/premium_photo-1683144245642-1406f0a42445?q=80&w=1907&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat; /* Palitan ng image URL mo */
+    border-radius: 8px;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,11 +167,19 @@
     flex-shrink: 0;
     padding: 10px;
     overflow: hidden;
+    background-size: cover !important;
+    background-position: center !important;
   }
 
-   .view-all-card:hover::after {
-      background: rgba(255, 255, 255, 0.8); /* White transparent overlay */
-      transition: background 0.3s ease;
+  .view-all-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .view-all-card:hover::after {
+    background: rgba(255, 255, 255, 0.8);
+    transition: background 0.3s ease;
   }
  
 {% endstylesheet %}
@@ -155,58 +191,55 @@
 </head>
 
 <!-- Unique Section Wrapper -->
-<div class="custom-tabs-section" data-section-id="{{ section.id }}">
-  <ul class="custom--tabs page-width">
+<div class="custom-tabs-section" data-section-id="{{ section.id }}" style="margin-top: -20px;">
+  <div class="page-width">
+    <ul class="custom--tabs" style="padding-left: 35px;">
+      {% for block in section.blocks %}
+        {% if block.type == 'tab' %}
+          <li class="tab__list {% if forloop.first %}active{% endif %}">
+            <h6 class="custom-tab {% if forloop.first %}active{% endif %}" 
+                data-content-id="content--{{ block.id }}--{{ section.id }}"
+                data-section-id="{{ section.id }}">
+              {{ block.settings.heading }}
+            </h6>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
     {% for block in section.blocks %}
+     
       {% if block.type == 'tab' %}
-        <li class="tab__list {% if forloop.first %}active{% endif %}">
-          <h6 class="custom-tab {% if forloop.first %}active{% endif %}" 
-              data-content-id="content--{{ block.id }}--{{ section.id }}"
-              data-section-id="{{ section.id }}">
-            {{ block.settings.heading }}
-          </h6>
-        </li>
+        <div id="content--{{ block.id }}--{{ section.id }}" 
+             class="custom__tab-content {% if forloop.first %}active{% endif %}" 
+             data-section-id="{{ section.id }}" style="padding-left: 35px; padding-right: 35px;">
+          {% if block.settings.collection != blank %}
+            <div class="collection-products">
+              {% for product in block.settings.collection.products limit: 10 %}
+                <div class="product-card">
+                  <a href="{{ product.url }}">
+                    <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+                    <p>{{ product.title }}</p>
+                    <p class="product-price">{{ product.price | money }}</p>
+                  </a>
+                </div>
+              {% endfor %}
+              <a href="{{ block.settings.collection.url }}" class="view-all-card" 
+                 style="background-image: url('{{ section.settings.view_all_tabs_card_image | img_url: 'medium' }}'); 
+                        background-position: center; 
+                        background-size: cover; 
+                        background-repeat: no-repeat;
+                        color: {{ section.settings.view_all_tabs_text_color }};">
+                VIEW ALL PRODUCTS
+              </a>
+            </div>
+          {% else %}
+            <p>No products found in this collection.</p>
+          {% endif %}
+        </div>
       {% endif %}
     {% endfor %}
-  </ul>
-
-  {% for block in section.blocks %}
-   
-    {% if block.type == 'tab' %}
-      <div id="content--{{ block.id }}--{{ section.id }}" 
-           class="custom__tab-content page-width {% if forloop.first %}active{% endif %}" 
-           data-section-id="{{ section.id }}">
-        {% if block.settings.collection != blank %}
-          <div class="collection-products" id="collection--{{ block.id }}">
-            {% for product in block.settings.collection.products limit: 10 %}
-              <div class="product-card">
-                <a href="{{ product.url }}">
-                  <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
-                  <p>{{ product.title }}</p>
-                  <p class="product-price">{{ product.price | money }}</p>
-                </a>
-              </div>
-            {% endfor %}
-            <!--<a href="{ block.settings.collection.url }}" class="view-all-card" style="background-image: url('{ block.settings.view_all_tabs_card_image | img_url: 'medium' }}'); background-position: center; background-size: cover; background-repeat: no-repeat;">VIEW ALL PRODUCTS</a>-->
-                 <a href="{{ block.settings.collection.url }}" class="view-all-card" 
-                   style="background-image: url('{{ section.settings.view_all_tabs_card_image | img_url: 'medium' }}'); 
-                          background-position: center; 
-                          background-size: cover; 
-                          background-repeat: no-repeat;
-                          color: {{ section.settings.view_all_tabs_text_color }};">
-                  VIEW ALL PRODUCTS
-                </a>
-
-          </div>
-        {% else %}
-          <p>No products found in this collection.</p>
-        {% endif %}
-        
-      
-      </div>
-    {% endif %}
-  {% endfor %}
-  
+  </div>
 </div>
 
 {% javascript %}

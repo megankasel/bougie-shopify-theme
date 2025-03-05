@@ -3,3 +3,28 @@ TODO on the Shopify Site
 
 - Increase the header width on desktop 
 - Clean Up category Tab under essentials on the home page (make Even erything look nicer)
+- On the header please add a line between the logo & the menu
+
+---
+
+Updates & edits. 
+- Standardize page width to align with the current header position. Including the blog section on the home page, and the footer, etc...
+- all carousels should fill the width of the container, they're being cut off now. 
+- the category tabs should be left aligned, along with the headers. There are other elements down page as well that are similar, make them consistent. 
+- The carousel items need a bit of cleaning up. 
+
+-- Round 3 Updates
+- Headers before carousels need to be left aligned with the category tab, right now there is extra padding.
+- Blog posts section is not consistently wide as the rest of the sections. 
+- The footer needs to have the global nav added to it, and the layout structure needs to be cleaned up, right now it feels like things are not aligned properly. Give it structure & form, don't just center things. 
+- Reduce size on the carousel items, they're taking up too much vertical real estate. 
+
+-- Round 4 Updates
+- Carousel needs to be in-line with header & global page components.
+- blog preview font is way too small, and barely readable. Increase it. 
+- Make the footer into 4 sections, 
+    -- 1. moving the global nav into the far left, and give the section a header titled shop. 
+    -- 2. Then the customer service menu
+    -- 3. make the logo the third section.
+    -- 4. move the email sign up to the last (far right), and make it right aligned not centered.
+    -- 5. You're a UI & UX Expert -- Give whole footer a bit of a cleanup 

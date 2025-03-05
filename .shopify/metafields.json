@@ -1529,6 +1529,16 @@
         "name": "list.metaobject_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "rug-material",
+      "namespace": "shopify",
+      "name": "Rug material",
+      "description": "Identifies the material used in a rug's construction, such as wool or jute",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [
