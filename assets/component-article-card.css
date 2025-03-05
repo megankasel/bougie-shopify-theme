@@ -48,25 +48,26 @@
 
 .article-card .card__heading {
   margin-bottom: 0.6rem;
+  font-size: 1.6em;
 }
 
 .blog-articles .article-card .card__information,
 .blog__posts .article-card .card__information {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 1rem 1.5rem;
 }
 
 .article-card__info {
-  padding-top: 0.4rem;
+  padding-top: 0.3rem;
+  font-size: 1.2rem;
 }
 
 .article-card__footer {
-  letter-spacing: 0.1rem;
-  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .article-card__footer:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 .article-card__footer:last-child {
@@ -75,7 +76,9 @@
 
 .article-card__excerpt {
   width: 100%;
-  margin-top: 1.2rem;
+  margin-top: 0.8rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
 }
 
 .article-card__link:not(:only-child) {
@@ -89,42 +92,42 @@
 }
 
 .article-card__image--small .ratio::before {
-  padding-bottom: 11rem;
+  padding-bottom: 8rem;
 }
 
 .article-card__image--medium .ratio::before {
-  padding-bottom: 22rem;
+  padding-bottom: 16rem;
 }
 
 .article-card__image--large .ratio::before {
-  padding-bottom: 33rem;
+  padding-bottom: 24rem;
 }
 
 @media screen and (min-width: 750px) {
   .article-card__image--small .ratio::before {
-    padding-bottom: 14.3rem;
+    padding-bottom: 10rem;
   }
 
   .article-card__image--medium .ratio::before {
-    padding-bottom: 21.9rem;
+    padding-bottom: 16rem;
   }
 
   .article-card__image--large .ratio::before {
-    padding-bottom: 27.5rem;
+    padding-bottom: 22rem;
   }
 }
 
 @media screen and (min-width: 990px) {
   .article-card__image--small .ratio::before {
-    padding-bottom: 17.7rem;
+    padding-bottom: 14rem;
   }
 
   .article-card__image--medium .ratio::before {
-    padding-bottom: 30.7rem;
+    padding-bottom: 22rem;
   }
 
   .article-card__image--large .ratio::before {
-    padding-bottom: 40.7rem;
+    padding-bottom: 30rem;
   }
 }
 

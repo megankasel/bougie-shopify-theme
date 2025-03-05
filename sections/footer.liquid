@@ -283,6 +283,19 @@
         {%- endif -%}
       </div>
       <div class="footer__column footer__column--info">
+        {%- if section.settings.show_global_navigation -%}
+          <div class="footer__global-navigation">
+            <ul class="footer__global-nav-list list-unstyled">
+              {%- for link in linklists.main-menu.links -%}
+                <li class="footer__global-nav-item">
+                  <a href="{{ link.url }}" class="footer__global-nav-link link--text focus-inset">
+                    {{ link.title | escape }}
+                  </a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
         {%- if section.settings.payment_enable -%}
           <div class="footer__payment">
             <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
@@ -516,6 +529,13 @@
       "id": "show_policy",
       "default": true,
       "label": "t:sections.footer.settings.show_policy.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_global_navigation",
+      "default": true,
+      "label": "Show global navigation",
+      "info": "Displays main menu links in the footer for easy access"
     },
     {
       "type": "header",

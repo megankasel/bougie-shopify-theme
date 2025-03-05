@@ -83,6 +83,12 @@
   padding: 0 1.5rem;
 }
 
+@media screen and (min-width: 990px) {
+  .page-width {
+    max-width: 90%; /* Standardizing page width to match header */
+  }
+}
+
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   max-width: 100%;
 }
@@ -799,6 +805,7 @@ summary::-webkit-details-marker {
   gap: 1rem;
   margin-bottom: 3rem;
   flex-wrap: wrap;
+  text-align: left; /* Ensure text is left-aligned */
 }
 
 .title--primary {
@@ -807,7 +814,7 @@ summary::-webkit-details-marker {
 
 .title-wrapper--self-padded-tablet-down,
 .title-wrapper--self-padded-mobile {
-  padding-left: 1.5rem;
+  padding-left: 0; /* Removed padding for consistent alignment */
   padding-right: 1.5rem;
 }
 
@@ -830,10 +837,12 @@ summary::-webkit-details-marker {
 
   .title-wrapper-with-link {
     align-items: center;
+    justify-content: space-between; /* Ensure consistent space-between on desktop */
   }
 
   .title-wrapper-with-link .title {
     margin-bottom: 0;
+    text-align: left; /* Ensure title is left-aligned */
   }
 
   .title-wrapper--self-padded-tablet-down {
