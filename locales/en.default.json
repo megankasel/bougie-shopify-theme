@@ -1,1 +1,166 @@
-{"products":{"product":{"add_to_cart":"Add to cart","choose_options":"Choose options","choose_product_options":"Choose options for {{ product_name }}"}}}
+{
+  "general": {
+    "share": {
+      "share_url": "Share URL",
+      "close": "Close share",
+      "copy_to_clipboard": "Copy to clipboard"
+    },
+    "social": {
+      "links": {
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "youtube": "YouTube",
+        "tiktok": "TikTok",
+        "twitter": "Twitter",
+        "pinterest": "Pinterest",
+        "snapchat": "Snapchat",
+        "tumblr": "Tumblr",
+        "vimeo": "Vimeo"
+      }
+    },
+    "slider": {
+      "previous_slide": "Previous slide",
+      "next_slide": "Next slide",
+      "of": "of"
+    },
+    "form": {
+      "label_required": "Required",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "comment": "Comment",
+      "message": "Message",
+      "send": "Send",
+      "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
+      "error_heading": "Please adjust the following:"
+    }
+  },
+  "accessibility": {
+    "skip_to_product_info": "Skip to product information",
+    "close": "Close",
+    "unit_price_separator": "per",
+    "link_messages": {
+      "new_window": "Opens in a new window"
+    },
+    "vendor": "Vendor"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Add to cart",
+      "choose_options": "Choose options",
+      "choose_product_options": "Choose options for {{ product_name }}",
+      "sold_out": "Sold out",
+      "on_sale": "On sale",
+      "unavailable": "Unavailable",
+      "taxes_included": "Tax included.",
+      "shipping_policy_html": "Shipping calculated at checkout.",
+      "price": {
+        "regular_price": "Regular price",
+        "sale_price": "Sale price",
+        "unit_price": "Unit price",
+        "from_price_html": "from {{ price }}"
+      },
+      "quantity": {
+        "label": "Quantity",
+        "input_label": "Quantity for {{ product }}",
+        "increase": "Increase quantity for {{ product }}",
+        "decrease": "Decrease quantity for {{ product }}",
+        "multiples_of": "Multiples of {{ quantity }}",
+        "min_of": "Minimum of {{ quantity }}",
+        "max_of": "Maximum of {{ quantity }}",
+        "note": "Quantity note"
+      },
+      "volume_pricing": {
+        "title": "Volume pricing",
+        "note": "Volume pricing note"
+      },
+      "value_unavailable": "{{ option_value }} - Unavailable",
+      "variant_sold_out_or_unavailable": "Variant sold out or unavailable",
+      "xr_button": "View in your space",
+      "xr_button_label": "View in your space, loads item in augmented reality window",
+      "media": {
+        "open_media": "Open media {{ index }} in modal",
+        "play_model": "Play 3D model",
+        "play_video": "Play video",
+        "gallery_viewer": "Gallery Viewer",
+        "load_image": "Load image {{ index }} in gallery view",
+        "load_model": "Load 3D model {{ index }} in gallery view",
+        "load_video": "Load video {{ index }} in gallery view"
+      }
+    },
+    "facets": {
+      "sort_by_label": "Sort by",
+      "filter_by_label": "Filter by",
+      "product_count": {
+        "one": "{{ count }} product",
+        "other": "{{ count }} products"
+      },
+      "product_count_simple": {
+        "one": "{{ count }} product",
+        "other": "{{ count }} products"
+      },
+      "reset": "Reset",
+      "from": "From",
+      "to": "To",
+      "filters_selected": {
+        "one": "{{ count }} selected",
+        "other": "{{ count }} selected"
+      },
+      "max_price": "The highest price is {{ price }}",
+      "clear_filter": "Clear filter",
+      "apply": "Apply",
+      "clear": "Clear"
+    },
+    "modal": {
+      "label": "Media gallery"
+    }
+  },
+  "sections": {
+    "cart": {
+      "title": "Cart",
+      "headings": {
+        "price": "Price"
+      },
+      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Duties and taxes included. Shipping calculated at checkout.",
+      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Duties and taxes included. Shipping calculated at checkout. {shipping_policy_link}",
+      "taxes_included_shipping_at_checkout_without_policy": "Tax included. Shipping calculated at checkout.",
+      "taxes_included_shipping_at_checkout_with_policy_html": "Tax included. Shipping calculated at checkout. {shipping_policy_link}",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Duties included. Taxes and shipping calculated at checkout.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Duties included. Taxes and shipping calculated at checkout. {shipping_policy_link}",
+      "taxes_at_checkout_shipping_at_checkout_without_policy": "Taxes and shipping calculated at checkout.",
+      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Taxes and shipping calculated at checkout. {shipping_policy_link}",
+      "remove_title": "Remove {{ title }}"
+    },
+    "contact": {
+      "form_label": "Contact form",
+      "title": "Contact us",
+      "success": "Thank you for contacting us"
+    },
+    "quick_order_list": {
+      "product": "Product",
+      "variant": "Variant",
+      "product_total": "Product total",
+      "variant_total": "Variant total",
+      "view_cart": "View cart",
+      "remove_all": "Remove all",
+      "remove_all_items_confirmation": "Are you sure you want to remove all {{ quantity }} items?",
+      "cancel": "Cancel",
+      "each": "{{ money }} each",
+      "total_items": "Total items"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Here's your {{ value }} gift card for {{ shop }}!",
+      "subtext": "Your gift card",
+      "expired": "Expired",
+      "expiration_date": "Expires: {{ expires_on }}",
+      "how_to_use_gift_card": "Use this code at checkout",
+      "add_to_apple_wallet": "Add to Apple Wallet",
+      "copy_code_success": "Code copied",
+      "copy_code": "Copy code",
+      "shop_link": "Start shopping",
+      "qr_image_alt": "QR code — scan to redeem gift card"
+    }
+  }
+}
