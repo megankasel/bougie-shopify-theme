@@ -1,1 +1,74 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer":{"type":"footer","blocks":{"link_list_bPVmmM":{"type":"link_list","settings":{"heading":"Customer Service","menu":"customer-support"}},"forms_inline_Gc3FUw":{"type":"shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a","settings":{"form_id":"350405","text_color":"#161f1c","button_background_color":"#7d9d92","button_label_color":"#FFFFFF","links_color":"#fdd557","errors_color":"#E02229","text_alignment":"center","form_alignment":"center","padding_top":0,"padding_bottom":0,"padding_right":0,"padding_left":0}},"text_FTKJzF":{"type":"text","settings":{"heading":"","subtext":""}},"image_HpNi8W":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/BougieGreenFinallogo_5d1326b5-3d43-450e-a36d-a9a6df7936ef.png","image_width":260,"alignment":""}}},"block_order":["link_list_bPVmmM","forms_inline_Gc3FUw","text_FTKJzF","image_HpNi8W"],"settings":{"color_scheme":"scheme-2","newsletter_enable":false,"newsletter_heading":"Subscribe to our emails","enable_follow_on_shop":false,"show_social":false,"enable_country_selector":true,"enable_language_selector":true,"payment_enable":false,"show_policy":true,"margin_top":16,"padding_top":36,"padding_bottom":36}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "link_list_bPVmmM": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Customer Service",
+            "menu": "customer-support"
+          }
+        },
+        "forms_inline_Gc3FUw": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "350405",
+            "text_color": "#161f1c",
+            "button_background_color": "#7d9d92",
+            "button_label_color": "#ffffff",
+            "links_color": "#fdd557",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        },
+        "image_HpNi8W": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BougieGreenFinallogo_5d1326b5-3d43-450e-a36d-a9a6df7936ef.png",
+            "image_width": 260,
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_bPVmmM",
+        "forms_inline_Gc3FUw",
+        "image_HpNi8W"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": false,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 16,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
